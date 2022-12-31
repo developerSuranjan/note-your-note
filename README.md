@@ -14,7 +14,7 @@ git clone https://github.com/developerSuranjan/note-your-note.git
 
 --> Move into the directory where we have the project files : 
 ```bash
-cd Django-React-NotesApp
+cd note-your-note
 
 ```
 
@@ -45,12 +45,4 @@ python manage.py runserver
 
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
 
-#
 
-### App Preview :
-
-<div align="center">
-<img width="50%" src="https://www.linkpicture.com/q/Notes.png"/>
-</div>
-
-#
