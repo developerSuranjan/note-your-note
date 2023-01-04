@@ -1,0 +1,6 @@
+.git
+*.md
+.cache
+commands.txt
+api/__pycache__/*
+api/migrations/*
