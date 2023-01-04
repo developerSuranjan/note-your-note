@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.12.0a3-slim
 
 WORKDIR /app
 
@@ -8,3 +8,4 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 CMD [ "python3", "manage.py", "runserver", "0.0.0.0:8000"]
+HEALTHCHECK CMD curl --fail http://localhost/ || exit 1
