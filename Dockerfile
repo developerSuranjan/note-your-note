@@ -3,7 +3,9 @@ FROM python:3.12.0a3-slim
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt && \
+    apt-get update && \
+    apt-get install -y curl
 
 COPY . .
 
